@@ -31,7 +31,7 @@ class _ProductScreenState extends State<ProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.blueGrey,
         title: Text(
           "Product List",
           style: TextStyle(fontSize: 25, color: Colors.black),

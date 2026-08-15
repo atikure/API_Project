@@ -1,3 +1,4 @@
+import 'package:api_project/view/custom_widget/text.dart';
 import 'package:flutter/material.dart';
 import '../service/product_list.dart';
 
@@ -32,10 +33,7 @@ class _ProductScreenState extends State<ProductScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
-        title: Text(
-          "Product List",
-          style: TextStyle(fontSize: 25, color: Colors.black),
-        ),
+        title: CustomText(text: "Product List", fSize: 25, color: Colors.black),
         centerTitle: true,
       ),
       body: myProduct.length == 0
@@ -64,40 +62,34 @@ class _ProductScreenState extends State<ProductScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              "${myProduct[index]["title"]}",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                              ),
+                            CustomText(
+                              text: "${myProduct[index]["title"]}",
+                              fSize: 16,
+                              fWeight: FontWeight.w800,
                             ),
-                            Text(
-                              "Category : ${myProduct[index]["category"]}",
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                              ),
+                            CustomText(
+                              text:
+                                  "Category : ${myProduct[index]["category"]}",
+                              fSize: 15,
+                              fWeight: FontWeight.w700,
                             ),
-                            Text(
+                            CustomText(
+                              text:
                               "Price : ${myProduct[index]["price"]}",
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                              ),
+                              fSize: 15,
+                              fWeight: FontWeight.w600,
                             ),
-                            Text(
+                            CustomText(
+                              text:
                               "Rating : ${myProduct[index]["rating"]["rate"]}",
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                              ),
+                              fSize: 15,
+                              fWeight: FontWeight.w500,
                             ),
-                            Text(
+                            CustomText(
+                              text:
                               "Review : ${myProduct[index]["rating"]["count"]}",
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                              ),
+                              fSize: 15,
+                              fWeight: FontWeight.w400,
                             ),
                           ],
                         ),

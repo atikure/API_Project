@@ -83,13 +83,13 @@ class _ProductScreenState extends State<ProductScreen> {
                               text:
                                   "Rating : ${myProduct[index]["rating"]["rate"]}",
                               fSize: 15,
-                              fWeight: FontWeight.w500,
+                              fWeight: FontWeight.w600,
                             ),
                             CustomText(
                               text:
                                   "Review : ${myProduct[index]["rating"]["count"]}",
                               fSize: 15,
-                              fWeight: FontWeight.w400,
+                              fWeight: FontWeight.w600,
                             ),
                           ],
                         ),

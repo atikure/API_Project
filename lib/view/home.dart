@@ -1,5 +1,5 @@
 import 'package:api_project/view/custom_widget/text.dart';
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
 import '../service/product_list.dart';
 
 class ProductScreen extends StatefulWidget {
@@ -8,7 +8,6 @@ class ProductScreen extends StatefulWidget {
   @override
   State<ProductScreen> createState() => _ProductScreenState();
 }
-
 class _ProductScreenState extends State<ProductScreen> {
   List myProduct = [];
 
@@ -82,6 +81,12 @@ class _ProductScreenState extends State<ProductScreen> {
                             CustomText(
                               text:
                                   "Rating : ${myProduct[index]["rating"]["rate"]}",
+                              fSize: 15,
+                              fWeight: FontWeight.w600,
+                            ),
+                            CustomText(
+                              text:
+                              "Rating : ${myProduct[index]["rating"]["rate"]}",
                               fSize: 15,
                               fWeight: FontWeight.w600,
                             ),

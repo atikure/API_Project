@@ -44,7 +44,7 @@ class _CountriesState extends State<Countries> {
         itemCount: cl.length,
         itemBuilder: (c, i) => ListTile(
           title: CustomText(text: "${cl[i]["name"]}"),
-          subtitle: Text("${cl[i]["admissionDateUnitedNations"]}"),
+          subtitle: CustomText(text: "${cl[i]["admissionDateUnitedNations"]}"),
         ),
       ),
     );

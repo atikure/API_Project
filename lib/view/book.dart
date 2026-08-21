@@ -31,8 +31,8 @@ class _BookScreenState extends State<BookScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
-        title: Text("Book"),
+        backgroundColor: Colors.blueGrey,
+        title: Text("Book - ${b.length}"),
         centerTitle: true,
       ),
       body: GridView.builder(

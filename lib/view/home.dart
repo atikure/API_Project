@@ -61,7 +61,6 @@ class _ProductScreenState extends State<ProductScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // Title Text
                             CustomText(
                               text: "${myProduct[index]["title"]}",
                               fSize: 16,
@@ -79,7 +78,6 @@ class _ProductScreenState extends State<ProductScreen> {
                               fWeight: FontWeight.w600,
                             ),
                             CustomText(
-                              // CustomText
                               text:
                                   "Rating : ${myProduct[index]["rating"]["rate"]}",
                               fSize: 15,
@@ -88,12 +86,6 @@ class _ProductScreenState extends State<ProductScreen> {
                             CustomText(
                               text:
                                   "Review : ${myProduct[index]["rating"]["count"]}",
-                              fSize: 15,
-                              fWeight: FontWeight.w600,
-                            ),
-                            CustomText(
-                              text:
-                              "Review : ${myProduct[index]["rating"]["count"]}",
                               fSize: 15,
                               fWeight: FontWeight.w600,
                             ),

@@ -61,11 +61,11 @@ class _BookScreenState extends State<BookScreen> {
                   ],
                 ),
                 SizedBox(height: 8),
-                Text(
-                  "${b[index]["title"]}",
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                CustomText(text: "${b[index]["title"]}",
+                maxLine: 2,
+                tOverflow: TextOverflow.ellipsis,
+                  fSize: 18,
+                  fWeight: FontWeight.bold,
                 ),
                 SizedBox(height: 10),
                 Row(

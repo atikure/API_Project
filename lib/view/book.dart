@@ -61,9 +61,10 @@ class _BookScreenState extends State<BookScreen> {
                   ],
                 ),
                 SizedBox(height: 8),
-                CustomText(text: "${b[index]["title"]}",
-                maxLine: 2,
-                tOverflow: TextOverflow.ellipsis,
+                CustomText(
+                  text: "${b[index]["title"]}",
+                  maxLine: 2,
+                  tOverflow: TextOverflow.ellipsis,
                   fSize: 18,
                   fWeight: FontWeight.bold,
                 ),
@@ -72,12 +73,10 @@ class _BookScreenState extends State<BookScreen> {
                   children: [
                     Icon(Icons.description, size: 20),
                     SizedBox(width: 5),
-                    Text(
-                      "${b[index]["pageCount"]}",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    CustomText(
+                      text: "${b[index]["pageCount"]}",
+                      fSize: 18,
+                      fWeight: FontWeight.bold,
                     ),
                     SizedBox(height: 10),
                   ],

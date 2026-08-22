@@ -1,3 +1,4 @@
+import 'package:api_project/view/custom_widget/text.dart';
 import 'package:flutter/material.dart';
 
 import '../service/book_list.dart';
@@ -10,7 +11,6 @@ class BookScreen extends StatefulWidget {
 }
 
 class _BookScreenState extends State<BookScreen> {
-
   List b = [];
 
   getBookList() async {
@@ -25,7 +25,6 @@ class _BookScreenState extends State<BookScreen> {
     getBookList();
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -49,16 +48,15 @@ class _BookScreenState extends State<BookScreen> {
             padding: const EdgeInsets.all(8.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(Icons.menu_book, size: 20),
-                    // Icon(Icons.menu_book, size: 20),
-                    Text(
-                      "# ${b[index]["id"]}",
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    CustomText(
+                      text: "# ${b[index]["id"]}",
+                      fSize: 18,
+                      fWeight: FontWeight.bold,
                     ),
                   ],
                 ),
@@ -76,7 +74,10 @@ class _BookScreenState extends State<BookScreen> {
                     SizedBox(width: 5),
                     Text(
                       "${b[index]["pageCount"]}",
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     SizedBox(height: 10),
                   ],
@@ -90,19 +91,23 @@ class _BookScreenState extends State<BookScreen> {
                         "${b[index]["authors"]}",
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ],
                 ),
                 SizedBox(height: 20),
                 Center(
-                    child: ElevatedButton(
-                      onPressed: (){},
-                      child: Text(
-                        "View More",
-                        style: TextStyle(color: Colors.black87, fontSize: 12),
-                      ),)
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "View More",
+                      style: TextStyle(color: Colors.black87, fontSize: 12),
+                    ),
+                  ),
                 ),
               ],
             ),

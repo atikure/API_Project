@@ -86,14 +86,12 @@ class _BookScreenState extends State<BookScreen> {
                     Icon(Icons.person_2_outlined, size: 20),
                     SizedBox(width: 5),
                     Expanded(
-                      child: Text(
-                        "${b[index]["authors"]}",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      child: CustomText(
+                        text: "${b[index]["authors"]}",
+                        tOverflow: TextOverflow.ellipsis,
+                        maxLine: 1,
+                        fSize: 18,
+                        fWeight: FontWeight.bold,
                       ),
                     ),
                   ],

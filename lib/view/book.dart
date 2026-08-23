@@ -1,6 +1,5 @@
 import 'package:api_project/view/custom_widget/text.dart';
 import 'package:flutter/material.dart';
-
 import '../service/book_list.dart';
 
 class BookScreen extends StatefulWidget {
@@ -31,7 +30,7 @@ class _BookScreenState extends State<BookScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
-        title: Text("Book - ${b.length}"),
+        title: CustomText(text: "Book - ${b.length}",fSize: 25,),
         centerTitle: true,
       ),
       body: GridView.builder(

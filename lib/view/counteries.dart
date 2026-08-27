@@ -36,9 +36,7 @@ class _CountriesState extends State<Countries> {
             onPressed: () {
               getData();
             },
-            icon: Icon(Icons.refresh),
-            // icon: Icon(Icons.refresh),
-          ),
+            icon: Icon(Icons.refresh),),
         ],
       ),
       body: ListView.builder(

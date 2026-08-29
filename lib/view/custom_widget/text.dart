@@ -30,6 +30,7 @@ class CustomText extends StatelessWidget {
         fontSize: fSize ?? 12,
         fontWeight: fWeight ?? FontWeight.w400,
         overflow: tOverflow ?? TextOverflow.ellipsis,
+        // overflow: tOverflow ?? TextOverflow.ellipsis,
         decoration: tDecoration ?? TextDecoration.none,
       ),
     );

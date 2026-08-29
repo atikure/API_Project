@@ -7,6 +7,5 @@ class BookService{
     var uri = Uri.parse("https://fakeapi.extendsclass.com/books");
     var r = await http.get(uri);
     return  jsonDecode(r.body);
-    return  jsonDecode(r.body);
   }
 }

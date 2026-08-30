@@ -14,6 +14,7 @@ class _CountriesState extends State<Countries> {
 
   getData() async {
     var a = await CountriesService().getCountries();
+    // var a = await CountriesService().getCountries();
     cl.clear();
     cl.addAll(a);
     setState(() {});

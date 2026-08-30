@@ -33,6 +33,7 @@ class _ProductScreenState extends State<ProductScreen> {
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
         title: CustomText(text: "Product List", fSize: 25, color: Colors.black),
+        // title: CustomText(text: "Product List", fSize: 25, color: Colors.black),
         centerTitle: true,
       ),
       body: myProduct.length == 0

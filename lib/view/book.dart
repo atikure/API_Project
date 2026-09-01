@@ -29,7 +29,7 @@ class _BookScreenState extends State<BookScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.blueAccent,
         title: CustomText(text: "Book - ${b.length}",fSize: 25,fWeight: FontWeight.bold,),
         centerTitle: true,
       ),
@@ -55,7 +55,7 @@ class _BookScreenState extends State<BookScreen> {
                     CustomText(
                       text: "# ${b[index]["id"]}",
                       fSize: 18,
-                      fWeight: FontWeight.bold,
+                      fWeight: FontWeight.bold,color: Colors.black87,
                     ),
                   ],
                 ),
@@ -65,7 +65,7 @@ class _BookScreenState extends State<BookScreen> {
                   maxLine: 2,
                   tOverflow: TextOverflow.ellipsis,
                   fSize: 18,
-                  fWeight: FontWeight.bold,
+                  fWeight: FontWeight.bold,color: Colors.black87,
                 ),
                 SizedBox(height: 10),
                 Row(
@@ -75,7 +75,7 @@ class _BookScreenState extends State<BookScreen> {
                     CustomText(
                       text: "${b[index]["pageCount"]}",
                       fSize: 18,
-                      fWeight: FontWeight.bold,
+                      fWeight: FontWeight.bold,color: Colors.black87,
                     ),
                     SizedBox(height: 10),
                   ],
@@ -90,7 +90,7 @@ class _BookScreenState extends State<BookScreen> {
                         tOverflow: TextOverflow.ellipsis,
                         maxLine: 1,
                         fSize: 18,
-                        fWeight: FontWeight.bold,
+                        fWeight: FontWeight.bold,color: Colors.black87,
                       ),
                     ),
                   ],
@@ -101,7 +101,7 @@ class _BookScreenState extends State<BookScreen> {
                     onPressed: () {},
                     child: CustomText(
                       text: "View More",
-                      color: Colors.black87,
+                      color: Colors.black45,
                       fSize: 15,
                     ),
                   ),

@@ -50,7 +50,6 @@ class _ProductScreenState extends State<ProductScreen> {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                             image: NetworkImage("${myProduct[index]["image"]}"),
-                            // image: NetworkImage("${myProduct[index]["image"]}"),
                           ),
                         ),
                       ),

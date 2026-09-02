@@ -50,7 +50,6 @@ class _ProductScreenState extends State<ProductScreen> {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                             image: NetworkImage("${myProduct[index]["image"]}"),
-                            // image: NetworkImage("${myProduct[index]["image"]}"),
                           ),
                         ),
                       ),
@@ -59,6 +58,7 @@ class _ProductScreenState extends State<ProductScreen> {
                       flex: 200,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
+                        // padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [

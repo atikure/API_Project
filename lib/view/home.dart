@@ -8,6 +8,7 @@ class ProductScreen extends StatefulWidget {
   @override
   State<ProductScreen> createState() => _ProductScreenState();
 }
+
 class _ProductScreenState extends State<ProductScreen> {
   List myProduct = [];
 
@@ -32,7 +33,13 @@ class _ProductScreenState extends State<ProductScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.lightBlueAccent,
-        title: CustomText(text: "Product List  - ${myProduct.length}", fSize: 25,fWeight: FontWeight.bold, color: Colors.black),
+        title: CustomText(
+          text: "Product List  - ${myProduct.length}",
+          // text: "Product List  - ${myProduct.length}",
+          fSize: 25,
+          fWeight: FontWeight.bold,
+          color: Colors.black,
+        ),
         centerTitle: true,
       ),
       body: myProduct.length == 0

@@ -35,7 +35,6 @@ class _ProductScreenState extends State<ProductScreen> {
         backgroundColor: Colors.lightBlueAccent,
         title: CustomText(
           text: "Product List  - ${myProduct.length}",
-          // text: "Product List  - ${myProduct.length}",
           fSize: 25,
           fWeight: FontWeight.bold,
           color: Colors.black,

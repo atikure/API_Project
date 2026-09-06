@@ -76,7 +76,6 @@ class _BookScreenState extends State<BookScreen> {
                       text: "${b[index]["pageCount"]}",
                       fSize: 18,
                       fWeight: FontWeight.bold,color: Colors.black87,
-                      // fWeight: FontWeight.bold,color: Colors.black87,
                     ),
                     SizedBox(height: 10),
                   ],

@@ -44,7 +44,6 @@ class _CountriesState extends State<Countries> {
         itemBuilder: (c, i) => ListTile(
           title: CustomText(text: "${cl[i]["name"]}"),
           subtitle: CustomText(text: "${cl[i]["admissionDateUnitedNations"]}"),
-          // subtitle: CustomText(text: "${cl[i]["admissionDateUnitedNations"]}"),
         ),
       ),
     );

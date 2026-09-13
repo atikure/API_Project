@@ -92,7 +92,6 @@ class _ProductScreenState extends State<ProductScreen> {
                             CustomText(
                               text:
                                   "Review : ${myProduct[index]["rating"]["count"]}",
-                                  // "Review : ${myProduct[index]["rating"]["count"]}",
                               fSize: 15,
                               fWeight: FontWeight.w600,
                             ),

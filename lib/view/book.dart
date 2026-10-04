@@ -52,7 +52,6 @@ class _BookScreenState extends State<BookScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(Icons.menu_book, size: 20),
-                    Icon(Icons.menu_book, size: 20),
                     CustomText(
                       text: "# ${b[index]["id"]}",
                       fSize: 18,
@@ -71,7 +70,6 @@ class _BookScreenState extends State<BookScreen> {
                 SizedBox(height: 10),
                 Row(
                   children: [
-                    Icon(Icons.description, size: 20),
                     Icon(Icons.description, size: 20),
                     SizedBox(width: 5),
                     CustomText(
